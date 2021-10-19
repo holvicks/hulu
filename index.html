@@ -1,0 +1,789 @@
+<!DOCTYPE Html>
+<html lang="en-gb">
+<head>
+<title> Hulu Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" rel="stylesheet" href="CSS/Hulu.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+.hero-image {
+    background-image: url("Images/img1.jpg");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+</style>
+<body>
+    
+    <div class="hero-image">
+       <!-- <div class="pos-f-t">
+            <div class="collapse" id="navbarToggleExternalContent">
+              <div class="bg-dark p-5">
+                <h4 class="text-white">Collapsed content</h4>
+                <span class="text-muted">Toggleable via the navbar brand.</span>
+              </div>
+            </div>
+            <nav class="navbar navbar-dark bg-dark">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </nav>
+          </div>
+        
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-show" id="collapsibleNavbar">
+                
+            </div>  
+          </nav>-->
+      <!-- Button trigger modal -->
+<button type="button" class="btn text-white" data-toggle="modal" data-target="#exampleModalCenter" style="float:right;">
+    <h4>LOG IN</h4>
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">LOG IN</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="/action_page.php" class="needs-validation" novalidate>
+            <div class="form-group Pt-5">
+                <label for="uname">Username:</label>
+                <input type="email" class="form-control" id="uname" placeholder="Enter Email" name="uname" required>
+                <div class="valid-feedback">Valid</div>
+                <div class="invalid-feedback"> Please fill out this field</div>
+            </div>
+            <div class="form-group pt-5">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter Password" name="pswd"required>
+            </div>
+            <div class="form-group form-check">
+            <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="remember" required>I Agree 
+            </label>
+            </div>
+        </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-dark">LOG IN</button>
+        </div>
+      </div>
+    </div>
+  </div>
+          <div class="hero-text text-white">
+            <h6> <span class="hulutext">TRY UP TO ONE MONTH FREE</h6><span></h6>
+            <h1> <span class="HuluText">Hulu</span></h1>
+            <p><b>Watch thousands of shows and movies, with plans starting as $5.99/month</b></p>
+            <p>HBO Max™, SHOWTIME®, CINEMAX® and STARZ® available as add-ons.</p>
+            <button type="button" class="btn btn-light">START YOUR FREE TRIAL </button>
+            <p>Free trial for new & Eligible Returning Subscribers Only.</p>
+        </div>
+    </div>
+
+    <div class="container-fluid p-3 bg-card text-white">
+        <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <img src="Images/partners.png" style="width:85%;">
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                <p><span class="bundle">BUNDLE WITH ANY HULU PLAN & SAVE</span></p>
+                <h3><span class="GetHulu">Get Hulu, Disney+, and ESPN+ starting at $13.99/month.</span></h3>
+                <a href="#" class="link-dark text-white">Details</a>
+            </div>
+              
+            <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 p-4">
+                <button type="button" class="btn text-white border">GET BUNDLE</button>
+            </div>
+        </div>
+     </div>
+<!-- The dark side-->
+     <div class="container-fluid  pt-5 darker">
+        <div class="container">
+          <p class="text-center hulutext">INCLUDED IN ALL PLANS</p>
+          <h1 class="text-center text-white tv-text">All The TV You Love</h1>
+          <p class="text-center text-white">Stream full seasons of exclusive series, current-season episodes, hit movies, Hulu Originals, kids shows, and more.</p>
+          <div class="card-deck">
+            <div class="card img-fuid">
+              <img src="Images/Spiderman.jpg" class="img-fluid card-img-top" style="width:100%; height:100%">
+              <div class="card-img-overlay">
+                <p class="card-text text-white">Past & Current Seasons</p>
+                <h4 class="card-title text-white">TV Shows</h4>
+              </div>
+            </div>
+            <div class="card">
+              <img src="Images/Kungful.jpg" class="img-fluid card-img-top" style="width:100%">
+              <div class="card-img-overlay">
+                <p class="card-text text-white">New & Classic</p>
+                <h4 class="card-title text-white">Movies</h4>
+              </div>
+            </div>
+            <div class="card">
+              <img src="Images/razz guy.jpeg" class="img-fluid card-img-top" style="width:100%; height:100%">
+              <div class="card-img-overlay">
+                <p class="card-text text-white">Groundbreaking</p>
+                <h4 class="card-title text-white">Hulu Originals</h4>
+              </div>
+            </div>
+            <div class="card">
+              <img src="Images/Mulan.jpg" class="img-fluid card-img-top" style="width:100%; height:100%">
+              <div class="card-img-overlay">
+                <p class="card-text text-white">Add-on</p>
+                <h4 class="card-title text-white">TV Shows</h4>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+    </div>
+
+   <!-- <div class="container">
+      <div class="card-deck pt-5">
+                        
+        
+                                
+          <div class="card text-center shadow">
+            <div class="card-header">
+              <h4>Hulu No Ads</h4>
+              <h5>30 Day Free Trial $0</h5>
+            </div>
+                                    
+            <div class="card-body">
+              <h5 class="card-title">For individuals</h5>
+              <p class="card-text">Great for personal projects</p>
+            </div>
+                                    
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Feature 1</li>
+              <li class="list-group-item">Feature 2</li>
+              <li class="list-group-item">Feature 3</li>
+            </ul>
+                                    
+            <div class="card-footer">
+               <a href="#" class="btn btn-info">Create Account</a>
+            </div>
+        </div>
+                          
+       
+                                
+          <div class="card text-center">
+            <div class="card-header text-white bg-dark">
+              <h3>Standard</h3>
+              <h5>£20</h5>
+            </div>
+                                    
+            <div class="card-body">
+              <h5 class="card-title">For small teams</h5>
+              <p class="card-text">Great for teams of 2 - 10</p>
+            </div>
+                                    
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">All free features</li>
+              <li class="list-group-item">Feature 4</li>
+              <li class="list-group-item">Feature 5</li>
+            </ul>
+                                    
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Create Account</a>
+            </div>
+        </div>
+                                
+      
+                                
+          <div class="card text-center shadow">
+                                    
+            <div class="card-header">
+              <h3>Premium</h3>
+              <h5>£30</h5>
+            </div>
+                                    
+            <div class="card-body">
+              <h5 class="card-title">For larger teams</h5>
+              <p class="card-text">Great for teams of 11 or more</p>
+            </div>
+                                    
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">All standard features</li>
+              <li class="list-group-item">Feature 6</li>
+              <li class="list-group-item">Feature 7</li>
+            </ul>
+                                    
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Create Account</a>
+            </div>
+          </div>
+        </div>
+     </div> -->
+     
+     <div class="container">
+      <div class="row">
+      <div class="bg-white sticky-top card-3 col-xs-12 col-sm-12 col-lg-6 pt-5 py-3 border-bottom"><h2 class="plan-head__headline ho-text">Select Your Plan</h2><div class="plan-head__description">No hidden fees, equipment rentals, or installation appointments.<br><b>Switch plans or cancel anytime.**</b></div></div>
+      
+      <div class="bg-white sticky-top card-2 col-4 col-sm-4 col-lg-2 pt-5 py-3 text-center border-bottom">
+        <div class=""></div>
+        <div class="card-title ho-text">Hulu(No Ads)</div>
+        <div class="card-eyebrow">30 DAY FREE TRIAL</div><div class="plan-card__button-wrapper">
+          
+          <button class="btn text-white pl-4 pr-4" style="background-color:#000000;" aria-label="Get Hulu + Live TV plan">TRY FOR $0
+          </button>
+        </div>
+    </div>
+
+    <div class="bg-white sticky-top card-2 col-4 col-sm-4 col-lg-2 pt-4 py-3 text-center border-bottom">
+      <div class=""></div>
+      <div class="card-badge rounded-pill"><span class="text-white">MOST POPULAR</span></div>
+      <div class="card-title ho-text">Hulu</div>
+      <div class="card-eyebrow">30 DAY FREE TRIAL</div><div class="plan-card__button-wrapper">
+        
+        <button class="btn text-white pl-4 pr-4" style="background-color:#000000;" aria-label="Get Hulu + Live TV plan">TRY FOR $0
+        </button>
+      </div>
+  </div>
+
+  <div class="bg-white sticky-top card-2 col-4 col-sm-4 col-lg-2 pt-5 py-3 text-center border-bottom">
+    <div class=""></div>
+    <div class="card-title ho-text ho-text">Hulu + LIve TV</div>
+    <div class="card-eyebrow">30 DAY FREE TRIAL</div><div class="plan-card__button-wrapper">
+      
+      <button class="btn text-white pl-4 pr-4" style="background-color:#000000;" aria-label="Get Hulu + Live TV plan">TRY FOR $0
+      </button>
+    </div>
+</div>
+
+
+<!-- First row-->
+<div class="card-3 col-xs-12 col-sm-12 col-lg-6 pt-2 border-price-bottom">Price after free trial</div>
+<div class="col-4 col-sm-4 col-lg-2 text-center border-price-bottom1 py-2">$11/MONTH</div>
+<div class="col-4 col-sm-4 col-lg-2 text-center border-price-bottom1 py-2">$5.99/month</div>
+<div class="col-4 col-sm-4 col-lg-2 text-center border-price-bottom1 py-2">$64.99/month</div>
+
+<!--Second row-->
+
+<div class="card-3 col-xs-12 col-sm-12 col-lg-6 pt-4 p-2 border-price-bottom">Streaming Library with thousands of TV episodes and movies</div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+
+<!--Third row-->
+
+<div class="card-3 col-xs-12 col-sm-12 col-lg-6 pt-4 p-2 border-price-bottom">Most new episodes the day after they air*</div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<!--Third row-->
+
+<div class="card-3 col-xs-12 col-sm-12 col-lg-6 pt-4 p-2 border-price-bottom">Access to award-winning Hulu Originals</div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<!--Fourth Row-->
+
+<div class="card-3 col-xs-12 col-sm-12 col-lg-6 pt-4 p-2 border-price-bottom">Watch on your TV, laptop, phone, or tablet</div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<!--Fifth Row-->
+
+<div class="card-3 col-xs-12 col-sm-12 col-lg-6 pt-4 p-2 border-price-bottom">Up to 6 user profilesUp to 6 user profiles</div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+
+<!--Sixth Row-->
+
+<div class="card-3 col-xs-12 col-sm-12 col-lg-6 pt-4 p-2 border-price-bottom">Watch on 2 different screens at the same time</div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+
+<!--Seventh Row-->
+
+<div class="card-3 col-xs-12 col-sm-12 col-lg-6 pt-4 p-2 border-price-bottom">No ads in streaming library</div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<!--Eight Row-->
+
+<div class="card-3 col-xs-12 col-sm-12 col-lg-6 pt-4 p-2 border-price-bottom">Download and watc</div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<!--Ninth Row-->
+
+<div class="card-3 col-xs-12 col-sm-12 col-lg-6 pt-4 p-2 border-price-bottom">Live TV with 65+ top channels. No cable required.</div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<!--Tenth Row-->
+
+<div class="card-3 col-xs-12 col-sm-12 col-lg-6 pt-4 p-2 border-price-bottom">Live TV guide to navigate channels</div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+
+<!--Eleventh Row-->
+
+<div class="card-3 col-xs-12 col-sm-12 col-lg-6 pt-4 p-2 border-price-bottom">Live TV guide to navigate channels</div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+<!---->
+    <div class="card-3 col-xs-12 col-sm-12 border-price-bottom pt-4 py-3">
+      <p style="font-size: 13px;">*For current-season shows in the streaming library only<br>
+        **Switches from Live TV to Hulu take effect as of the next billing cycle</p>
+    </div>
+
+ 
+<!--Show Adds On-->
+
+    
+ </div>
+</div>
+
+<div class="collapse" id="showaddson">
+<div class="container">
+  <div class="row">
+<!--Show adds content start -->
+    <div class="card-3 col-xs-12 col-sm-12 col-lg-6 pt-5 py-3 border-bottom"><h2 class="plan-head__headline ho-text">Available Add-ons</h2><div class="plan-head__description">Add-ons available at an additional cost.Add them up after you sign up for Hulu.<br></div></div>
+
+<div class="bg-white sticky-top card-2 col-4 col-sm-4 col-lg-2 pt-5 py-3 text-center border-bottom">
+  <div class=""></div>
+  <div class="card-title ho-text"></div>
+  <div class="card-eyebrow"></div><div class="plan-card__button-wrapper">
+    
+  </div>  
+</div>
+
+<div class="bg-white sticky-top card-2 col-4 col-sm-4 col-lg-2 pt-4 py-3 text-center border-bottom">
+<div class=""></div>
+<div class="card-title ho-text"></div>
+<div class="card-eyebrow"></div><div class="plan-card__button-wrapper">
+ 
+</div>
+</div>
+
+<div class="bg-white sticky-top card-2 col-4 col-sm-4 col-lg-2 pt-5 py-3 text-center border-bottom">
+<div class=""></div>
+<div class="card-title ho-text ho-text"></div>
+<div class="card-eyebrow"></div><div class="plan-card__button-wrapper">
+
+</div>
+</div>
+<!--head ends here-->
+
+
+<!--First Row-->
+
+<div class="card-3 col-xs-12 col-sm-12 col-lg-6 pt-4 p-2 border-price-bottom">HBO Max™</div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<!--Second Row-->
+
+<div class="card-3 col-xs-12 col-sm-12 col-lg-6 pt-4 p-2 border-price-bottom">CINEMAX®</div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+  <!--Third Row-->
+
+<div class="card-3 col-xs-12 col-sm-12 col-lg-6 pt-4 p-2 border-price-bottom">SHOWTIME®</div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<!--Fourth Row-->
+
+  <div class="card-3 col-xs-12 col-sm-12 col-lg-6 pt-4 p-2 border-price-bottom">STARZ®</div>
+
+  <div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+  
+  <div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+  
+  <div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<!--Fifth Row-->
+<div class="card-3 col-xs-12 col-sm-12 col-lg-6 pt-4 p-2 border-price-bottom">Unlimited Screens</div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<!--Sixth Row-->
+<div class="card-3 col-xs-12 col-sm-12 col-lg-6 pt-4 p-2 border-price-bottom">Enhanced Cloud DVR</div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+
+<!--Seventh Row-->
+<div class="card-3 col-xs-12 col-sm-12 col-lg-6 pt-4 p-2 border-price-bottom">Entertainment Add-on</div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<!--Eight Row-->
+
+<div class="card-3 col-xs-12 col-sm-12 col-lg-6 pt-4 p-2 border-price-bottom">Espanol Add-on</div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+<div class="col-4 col-sm-4 col-lg-2 text-center pt-4 border-price-bottom1"><i class="fa fa-check" style="font-size:20px"></i></div>
+
+  </div>
+</div>
+</div>
+
+<div class="col-xs-12 col-sm-12 border-price-bottom pt-4 py-3 text-center">
+  <a class="" data-toggle="collapse" href="#showaddson"> Show Add-ons<i class="fa fa-angle-down rotate-icon" style="font-size:30px;"></i></a>
+</div>
+
+<div class="container-fluid darker text-center text-white">
+  <h2>Students: Get Hulu For Just $1.99/Month</h2>
+  <p>Stream everything Hulu has to offer with our ad-supported plan for just $1.99/month (regularly $5.99/month).<br> 65% discount valid as long as you're a college student.</p>
+  <button type="button" class="btn btn-light">LEARN MORE</button>
+</div>
+
+<!--
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-4" id="accordionEx" role="tablist" aria-multiselectable="true"></div>
+        <h3>BROWSE</h3>
+  
+        <div class="xs-accordion">
+          <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
+        aria-controls="collapseOne1">
+        <p class="mb-0">
+          Collapsible Group Item #1 <i class="fas fa-angle-down rotate-icon"></i>
+        </p>
+      </a>
+        </div>
+
+        <div id="collapseOne1" class="col-sm collapse" role="tabpanel" aria-labelledby="headingOne1"
+      data-parent="#accordionEx">
+      <ul class="list-unstyled">
+        <li>
+          <a href="#!" class="text-dark" style="text-decoration:none;">Streaming Library</a>
+        </li>
+        <li>
+         
+      </ul>
+      
+
+    </div>
+  </div>
+</div>
+-->
+
+
+<footer class="footer-collapse px-1 py-3 container-fluid "style="background-color:#EBEDF2;">
+  <div class="container">
+    <div class="row">
+  <div class="col-xl-8 col-md-12 col-sm-12 ">
+
+
+         <!--Footer show-->
+              <div class="widget hidden-xs-down hidee-2">
+                <p class="text-uppercase text-bold">Product</p>
+                <div class="row">
+                  <div class="col-xl-3 col-md-3">
+                <ul class="widget-list list-unstyled p-0 text-secondary">
+                  <li><a href="" class="text-secondary" style="text-decoration: none;">Create Websites</a></li>
+                  <li><a href="" class="text-secondary" style="text-decoration: none;">Secure Cloud Hosting</a></li>
+                  <li><a href="" class="text-secondary" style="text-decoration: none;">Engage Your Audience</a></li>
+                  <li><a href="" class="text-secondary" style="text-decoration: none;">Website Support</a></li>
+                </ul>
+              </div>
+
+              <div class="col-xl-3 col-md-3 ">
+                <ul class="widget-list list-unstyled p-0">
+                  <li><a href="" class="text-secondary" style="text-decoration: none;">Tv Shows</a></li>
+                  <li><a href="" class="text-secondary" style="text-decoration: none;">Movies</a></li>
+                  <li><a href="" class="text-secondary" style="text-decoration: none;">Originals</a></li>
+                  <li><a href="" class="text-secondary" style="text-decoration: none;">Networks</a></li>
+                  <li><a href="" class="text-secondary" style="text-decoration: none;">Kids</a></li>
+                  <li><a href="" class="text-secondary" style="text-decoration: none;">FX on Hulu</a></li>
+                </ul>
+              </div>
+              
+              <div class="col-xl-3 col-md-3 ">
+                <ul class="widget-list list-unstyled p-0">
+                  <li><a href="" class="text-secondary" style="text-decoration: none;">HBO Max</a></li>
+                  <li><a href="" class="text-secondary" style="text-decoration: none;">Cinemax</a></li>
+                  <li><a href="" class="text-secondary" style="text-decoration: none;">Showtime</a></li>
+                  <li><a href="" class="text-secondary" style="text-decoration: none;">STARZ</a></li>
+                </ul>
+              </div>
+
+              <div class="col-xl-3 col-md-3 ">
+                <ul class="widget-list list-unstyled p-0">
+                  <li><a href="" class="text-secondary" style="text-decoration: none;">Hulu, Disneys+, and ESPN+</a></li>
+                  <li><a href="" class="text-secondary" style="text-decoration: none;">Movies</a></li>
+                  <li><a href="" class="text-secondary" style="text-decoration: none;">Disney Bundle with Hulu(No Ads)</a></li>
+                  <li><a href="" class="text-secondary" style="text-decoration: none;">Disney bundle with Hulu + Live TV</a></li>
+                  <li><a href="" class="text-secondary" style="text-decoration: none;">Student Discount</a></li>
+                </ul>
+              </div>
+
+              </div>
+              </div>
+
+              <div id="accordion" role="tablist" aria-multiselectable="true" class="widget hidden-sm-up  hidee">
+                <div role="tab" id="headingOne">
+                  <p class="card-header py-3 border-0 text-uppercase text-bold">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="text-secondary">
+                      Product
+                    </a>
+                  </p>
+                </div>
+                <div id="collapseOne" class="collapse hiden cont-visible-hidey" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="card-block" ></div>
+                    <ul class="widget-list list-unstyled p-0">
+                      <li><a href="" class="text-secondary" style="text-decoration: none;">Create Websites</a></li>
+                      <li><a href="" class="text-secondary" style="text-decoration: none;">Secure Cloud Hosting</a></li>
+                      <li><a href="" class="text-secondary" style="text-decoration: none;">Engage Your Audience</a></li>
+                      <li><a href="" class="text-secondary" style="text-decoration: none;">Website Support</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--second footer-->
+      
+              <div class="col-xl-2 col-md-6 col-sm-12 ">
+                <h2 class="sr-only">Solodev Content Management System</h2>
+                  
+               <!--Footer show-->
+                    <div class="widget hidden-xs-down sec-hidee-2">
+                      <p class="text-uppercase text-bold">HELP</p>
+                      <div class="row">
+                        <div class="col-xl-12 col-md-12">
+                      <ul class="widget-list list-unstyled p-0">
+                        <li><a href="" class="text-secondary" style="text-decoration: none;">Account & Billing</a></li>
+                        <li><a href=""class="text-secondary" style="text-decoration: none;">Plans & Pricing</a></li>
+                        <li><a href="" class="text-secondary" style="text-decoration: none;">SUpported Devices</a></li>
+                        <li><a href="" class="text-secondary" style="text-decoration: none;">Accessibility</a></li>
+                      </ul>
+                    </div>
+      
+                    </div>
+                    </div>
+      
+                    <div id="accordion" role="tablist" aria-multiselectable="true" class="widget hidden-sm-up  sec-hidee">
+                      <div role="tab" id="headingOne">
+                        <p class="card-header py-3 border-0 text-uppercase text-bold">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="text-secondary">
+                            HELP
+                          </a>
+                        </p>
+                      </div>
+                      <div id="collapseOne" class="collapse hiden cont-visible-hidey" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="card-block" ></div>
+                          <ul class="widget-list list-unstyled p-0">
+                            <li><a href="" class="text-secondary" style="text-decoration: none;">Account & Billin</a></li>
+                            <li><a href="" class="text-secondary" style="text-decoration: none;">Plans & Pricing</a></li>
+                            <li><a href="" class="text-secondary" style="text-decoration: none;">SUpported Devices</a></li>
+                            <li><a href="" class="text-secondary" style="text-decoration: none;">Accessibility</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+<!--Third show-->
+              
+<div class="col-xl-2 col-md-6 col-sm-12 ">
+    
+ <!--Footer show-->
+      <div class="widget hidden-xs-down th-hidee-2">
+        <p class="text-uppercase text-bold">ABOUT US</p>
+        <div class="row">
+          <div class="col-xl-12 col-md-12">
+        <ul class="widget-list list-unstyled p-0">
+          <li><a href="" class="text-secondary" style="text-decoration: none;">Press</a></li>
+          <li><a href="" class="text-secondary" style="text-decoration: none;">Jobs</a></li>
+          <li><a href="" class="text-secondary" style="text-decoration: none;">Contact</a></li>
+        </ul>
+      </div>
+
+      </div>
+      </div>
+
+      <div id="accordion" role="tablist" aria-multiselectable="true" class="widget hidden-sm-up  th-hidee">
+        <div role="tab" id="headingOne">
+          <p class="card-header py-3 border-0 text-uppercase text-bold">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="text-secondary">
+              ABOUT US
+            </a>
+          </p>
+        </div>
+        <div id="collapseOne" class="collapse hiden cont-visible-hidey" role="tabpanel" aria-labelledby="headingOne">
+          <div class="card-block" ></div>
+            <ul class="widget-list list-unstyled p-0">
+              <li><a href="" class="text-secondary" style="text-decoration: none;">Press</a></li>
+              <li><a href="" class="text-secondary" style="text-decoration: none;">Jobs</a></li>
+              <li><a href="" class="text-secondary" style="text-decoration: none;">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+            </div>
+          </div>
+      <div class="container border-bottom">
+      </div>
+        
+      <!-- Footer -->
+<footer class="page-footer font-small">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Grid row-->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12 py-5">
+        <div class="mb-5 flex-center">
+
+          <!-- Facebook -->
+          <a class="fb-font" href="">
+            <i class="fa fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-font" href="">
+            <i class="fa fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-font" href="">
+            <i class="fa fa-google-plus fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-font" href="">
+            <i class="fa fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-font" href="">
+            <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Pinterest-->
+          <a class="pin-font" href="">
+            <i class="fa fa-pinterest fa-lg white-text fa-2x"> </i>
+          </a>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+
+
+
+</footer>
+
+
+</body>
+</html>

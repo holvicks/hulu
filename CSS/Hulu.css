@@ -1,0 +1,191 @@
+.HuluText{color:#1CE783;
+   font:2em Clarendon Blk BT;
+}
+
+.hulutext {
+  color:#2DBD9D;
+  font-family:calibri;
+}
+
+.bg-card {
+   background-color: #0E404F;
+}
+
+@media screen and (max-width: 600px) {
+    .bundle  {
+      font-size: 15px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .GetHulu  {
+      font-size: 20px;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .GetHulu  {
+      font-size: 20px;
+    }
+  }
+
+.getbundle {
+    background-color: white;
+}
+
+.darker {
+  background-color:#000000;
+  padding:40px;
+}
+
+.tv-text {
+  font: 5em Geometr415 Blk BT;
+  
+}
+
+@media screen and (max-width: 900px) {
+  .tv-text  {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tv-text  {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .card-deck {
+    column-count:2;
+  }
+}
+
+.plans-container .plan-head__card-badge {
+  min-height: 27px;
+}
+
+.plans-container .plan-head {
+  text-align: center;
+  display: flex;
+  padding: 0;
+  top: 0;
+}
+
+.plans-container {
+  background-color: #fff;
+  color: #292C33;
+  font-family: Graphik;
+  position: relative;
+}
+
+
+.card-badge {
+  background-color: #67728A;
+  padding:5px;
+}
+
+@media screen and (max-width: 900px) {
+  .card-3 {
+    text-align:center;
+  }
+}
+
+.ho-text {
+  font-family: Geometr415 Blk BT;
+}
+
+.border-price-bottom {
+  border-width:1px;
+  border-bottom-style:inset;
+}
+
+
+@media screen and (max-width: 900px) {
+  .border-price-bottom {
+    border-width:1px;
+    border-bottom-style:none;
+  }
+}
+
+.border-price-bottom1 {
+  border-width:1px;
+  border-bottom-style:inset;
+}
+
+.widget-list li a:hover {
+  text-decoration: underline;
+}
+.widget .card-header {
+  background:#EBEDF2;
+}
+.widget .card-header a {
+  width: 100%;
+  display: block;
+}
+.widget .card-header a:after {
+  content: "+";
+  right: 40px;
+  top: 0.9rem;
+  transition: transform 0.25s ease-in-out;
+}
+.widget .card-header a:hover, .widget .card-header a:focus {
+  text-decoration: none;
+}
+.widget .card-header a[aria-expanded="true"]:after {
+  transform: rotate(45deg);
+}
+.widget .card-block {
+  padding: 0 1.3rem;
+}
+.widget .card-block .widget-list li {
+  margin-bottom: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .hidee {
+   content-visibility: hidden;
+   
+  }
+}
+@media screen and (max-width: 768px) {
+  .hidee-2 {
+   content-visibility: hidden;
+   
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sec-hidee {
+   content-visibility: hidden;
+   
+  }
+}
+@media screen and (max-width: 768px) {
+  .sec-hidee-2 {
+   content-visibility: hidden;
+   
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .th-hidee {
+   content-visibility: hidden;
+   
+  }
+}
+@media screen and (max-width: 768px) {
+  .th-hidee-2 {
+   content-visibility: hidden;
+   
+  }
+}
+
+
+.fb-font,.tw-font,.gplus-font,.li-font,.ins-font,.pin-font  {
+  color: #9fa0a3;
+  font-size:13px;
+}
+.fb-font:hover,.tw-font:hover,.gplus-font:hover,.li-font:hover,.ins-font:hover,.pin-font:hover  {
+  color:#9fa0a3;
+}
+
